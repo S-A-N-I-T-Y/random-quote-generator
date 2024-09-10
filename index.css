@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #b79bc2;
+}
+main {
+  max-width: 600px;
+  padding: 20px 20px;
+  border-radius: 14px;
+  background: #834ae0;
+  box-shadow: 3px 3px 20px #919191, -3px -3px 20px #ffffff;
+  color: #ffffff;
+}
+h1 {
+  text-align: center;
+  font-weight: bolder;
+  font-size: 40px;
+}
+.quote-content {
+  margin: 20px 0;
+}
+.quote-area {
+  font-size: 25px;
+  margin: 10px 0;
+}
+.quote {
+  margin: 5px 0;
+}
+.author {
+  text-align: end;
+  font-size: 20px;
+}
+.quote-buttons {
+  border-top: 1px solid #ffffff;
+  margin: 20px 0;
+}
+.features {
+  text-align: center;
+  margin-top: 10px;
+}
+.features ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin-bottom: 5px;
+}
+.features button {
+  background-color: #ffffff;
+  color: #834ae0;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 18px;
+  border: none;
+  font-weight: bolder;
+  cursor: pointer;
+}
+ul li {
+  cursor: pointer;
+  height: 35px;
+  width: 35px;
+  background: #ffffff;
+  color: #834ae0;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+ul li:hover {
+  transform: scale(0.98);
+  transition: all 0.5s;
+}
+.features button:hover {
+  transform: scale(0.98);
+  transition: all 0.5s;
+}
