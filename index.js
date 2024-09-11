@@ -13,7 +13,7 @@ let apiKey = "XYAu9/19zb44QvyBt+iiDg==gAYIGm1IbISDeYhV";
 //quote function
 async function randomQuote() {
   newQuote.innerHTML = "Quote Loading...";
-  let response = await fetch("https://api.api-ninjas.com/v1/quotescategory=", {
+  let response = await fetch("https://api.api-ninjas.com/v1/quotes?category=", {
     method: "GET",
     headers: {
       "X-Api-Key": apiKey,
@@ -26,10 +26,6 @@ async function randomQuote() {
   quoteAuthor.innerHTML = data[0].author;
 
   newQuote.innerHTML = "New Quote";
-
-  if (response.status !== 200) {
-    quote.innerHTML = "Please check your internet connection";
-  }
 }
 
 // sound speaking function
